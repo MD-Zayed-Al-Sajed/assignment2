@@ -1,0 +1,136 @@
+/* MD Zayed Al Sajed */
+/* ID- 200565008 */
+
+/* Reset default margin, padding, and set full width and height */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif; /* Set font family for the entire page */
+}
+
+/* Styles for the main container */
+.fullPage {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(Content/image1.jpg); /* Set background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 30s infinite ease-in-out; /* Add animation for background image */
+}
+
+/* Styles for the main content container */
+.content {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    text-transform: uppercase;
+}
+
+/* Styles for the movie title */
+.content h1 {
+    color: #fff;
+    font-size: 60px;
+    letter-spacing: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add text shadow */
+}
+
+/* Styles for the tagline */
+.content h4 {
+    color: #f4eeee;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add text shadow */
+    position: absolute;
+    top: 55%;
+    left: 5%;
+}
+
+/* Common styles for text content */
+.content {
+    padding: 10px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+/* Styles for the summary */
+.summary {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    font-size: 24px; /* Increased font size for summary text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+}
+
+/* Keyframes for background image animation */
+@keyframes change {
+    0% {
+        background-image: url(Content/image1.jpg);
+    }
+    20% {
+        background-image: url(Content/image2.jpg);
+    }
+    40% {
+        background-image: url(Content/image3.jpg);
+    }
+    60% {
+        background-image: url(Content/image4.jpg);
+    }
+}
+
+/* Styles for "Watch on" link */
+.Watch_on {
+    position: absolute;
+    left: 35%;
+    bottom: 2%;
+}
+
+.Watch_on a {
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #111;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease; /* Add transition for smooth animation */
+}
+
+.Watch_on a:hover {
+    letter-spacing: 5px; /* Increase letter-spacing on hover */
+}
+
+/* Styles for "Review page" link */
+.reviewpage {
+    position: absolute;
+    left: 53%;
+    bottom: 2%;
+}
+
+.reviewpage a {
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #111;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease; /* Add transition for smooth animation */
+}
+
+.reviewpage a:hover {
+    letter-spacing: 5px; /* Increase letter-spacing on hover */
+}
